@@ -20,7 +20,7 @@ padding:30px;
 }
 
 .container{
-max-width:1300px;
+max-width:1600px;
 margin:auto;
 }
 
@@ -98,14 +98,17 @@ background:#a00000;
 }
 
 .bottom{
-display:grid;
-grid-template-columns:1fr 1fr 1fr;
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(3, minmax(320px, 1fr));
+    gap:25px;
+}
 margin-top:25px;
 align-items:stretch;
 }
 .bottom .card{
-    min-height:400px;
+    min-height:420px;
+    width:100%;
+}
     display:flex;
     flex-direction:column;
     align-items:center;

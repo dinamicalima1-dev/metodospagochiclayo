@@ -105,22 +105,22 @@ background:#a00000;
 margin-top:25px;
 align-items:stretch;
 }
+
 .bottom .card{
     min-height:420px;
     width:100%;
-}
+    box-sizing:border-box;
+
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-start;
 }
-  .bottom{
-    display:grid;
-    grid-template-columns:repeat(3, 280px);
-    justify-content:center;
-    gap:25px;
-    margin-top:25px;
-}
+  .bottom .card{
+    min-height:420px;
+    width:100%;
+    box-sizing:border-box;
+}  
   .bottom .card .logo{
 height:70px;
 object-fit:contain;

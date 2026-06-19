@@ -104,11 +104,22 @@ margin:25px auto;
 
 .bottom{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:1fr 1fr 1fr;
 gap:25px;
 margin-top:25px;
+align-items:stretch;
 }
-
+.bottom .card{
+min-height:520px;
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+}
+  .bottom .card .logo{
+height:70px;
+object-fit:contain;
+margin-bottom:15px;
+}
 .qr{
 width:220px;
 margin:20px auto;
@@ -204,7 +215,7 @@ Métodos de pago - SEDE CHICLAYO
 </div>
 
 <div class="card">
-<img src="SCOTIABANK LOGO.png" class="logo">
+<img src="scotiabanklogo.png" class="logo">
   
 <p><strong>Cuenta Soles</strong></p>
 <div class="dato">000-5058189</div>
@@ -289,9 +300,7 @@ Métodos de pago - SEDE CHICLAYO
 
 </div>
 
-<div class="footer">
-<span>www.dinamicaperu.com.pe</span>
-</div>
+
 
 </div>
 

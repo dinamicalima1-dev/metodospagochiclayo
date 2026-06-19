@@ -1,1 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Métodos de Pago - Chiclayo</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f3f3f3;
+padding:30px;
+}
+
+.container{
+max-width:1300px;
+margin:auto;
+}
+
+.logo-principal{
+text-align:center;
+margin-bottom:20px;
+}
+
+.logo-principal img{
+max-width:350px;
+}
+
+.titulo{
+text-align:center;
+font-size:56px;
+font-weight:bold;
+color:#c40000;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+.card{
+background:white;
+border:1px solid #d80000;
+padding:25px;
+text-align:center;
+}
+
+.card img.logo{
+height:60px;
+margin-bottom:15px;
+max-width:220px;
+object-fit:contain;
+}
+
+.card h3{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:22px;
+line-height:1.5;
+}
+
+.label{
+font-weight:bold;
+font-size:24px;
+}
+
+.dato{
+font-size:24px;
+margin:8px 0 20px;
+word-break:break-word;
+}
+
+button{
+background:#c40000;
+border:none;
+color:white;
+padding:12px 28px;
+border-radius:30px;
+cursor:pointer;
+font-size:18px;
+font-weight:bold;
+}
+
+button:hover{
+background:#a00000;
+}
+
+.caja-piura{
+max-width:700px;
+margin:25px auto;
+}
+
+.bottom{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+margin-top:25px;
+}
+
+.qr{
+width:220px;
+margin:20px auto;
+display:block;
+}
+
+.numero{
+font-size:28px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.footer{
+text-align:center;
+margin-top:40px;
+}
+
+.footer span{
+background:#c40000;
+color:white;
+padding:12px 50px;
+border-radius:25px;
+font-size:22px;
+}
+
+@media(max-width:900px){
+
+.titulo{
+font-size:38px;
+}
+
+.grid,
+.bottom{
+grid-template-columns:1fr;
+}
+
+.card p,
+.label,
+.dato{
+font-size:18px;
+}
+}
+</style>
+
+<script>
+function copiarTexto(texto){
+navigator.clipboard.writeText(texto);
+alert("Número copiado");
+}
+</script>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="logo-principal">
+<img src="DINAMICA LOGO.png">
+</div>
+
+<div class="titulo">
+Métodos de pago - SEDE CHICLAYO
+</div>
+
+<div class="grid">
+
+<div class="card">
+<img src="LOGO BCP - copia.png" class="logo">
+
+<p><strong>CCI SOLES</strong></p>
+<div class="dato">002-305-001808375021-18</div>
+<button onclick="copiarTexto('00230500180837502118')">Copiar número</button>
+
+<br><br>
+
+<p><strong>CCI DÓLARES</strong></p>
+<div class="dato">002-305-001779185182-11</div>
+<button onclick="copiarTexto('00230500177918518211')">Copiar número</button>
+</div>
+
+<div class="card">
+<img src="LOGO BBVA.svg" class="logo">
+
+<p><strong>CCI SOLES</strong></p>
+<div class="dato">011-285-000100114276-47</div>
+<button onclick="copiarTexto('01128500010011427647')">Copiar número</button>
+
+<br><br>
+
+<p><strong>CCI DÓLARES</strong></p>
+<div class="dato">011-285-000202121706-48</div>
+<button onclick="copiarTexto('01128500020212170648')">Copiar número</button>
+</div>
+
+<div class="card">
+<img src="SCOTIABANK LOGO.png" class="logo">
+
+<p><strong>Cuenta Soles</strong></p>
+<div class="dato">000-5058189</div>
+
+<p><strong>CCI Soles</strong></p>
+<div class="dato">00940900000505818941</div>
+
+<p><strong>Cuenta Dólares</strong></p>
+<div class="dato">000-5346125</div>
+
+<p><strong>CCI Dólares</strong></p>
+<div class="dato">00940900000534612547</div>
+</div>
+
+<div class="card">
+<img src="Interbank logo.png" class="logo">
+
+<p><strong>Cuenta Soles</strong></p>
+<div class="dato">700-3008374931</div>
+
+<p><strong>CCI Soles</strong></p>
+<div class="dato">003-700-003008374931-24</div>
+
+<p><strong>Cuenta Dólares</strong></p>
+<div class="dato">700-3008374949</div>
+
+<p><strong>CCI Dólares</strong></p>
+<div class="dato">003-700-003008374949-26</div>
+</div>
+
+</div>
+
+<div class="card caja-piura">
+<img src="CAJA PIURA LOGO.svg" class="logo">
+
+<h3>Cuenta Recaudadora</h3>
+
+<p><strong>Titular:</strong></p>
+<p>Dinamica Implementos &amp; Piezas SAC</p>
+
+<br>
+
+<p><strong>Código</strong></p>
+<div class="numero">14394</div>
+
+<button onclick="copiarTexto('14394')">Copiar número</button>
+</div>
+
+<div class="bottom">
+
+<div class="card">
+<img src="LOGO YAPE.png" class="logo">
+
+<h3>Pago con Yape</h3>
+
+<img src="YAPE CHICLAYO.jpeg" class="qr">
+
+<p><strong>Titular:</strong></p>
+<p>Dinamica Implementos &amp; Piezas SAC</p>
+
+<div class="numero">938 657 487</div>
+
+<button onclick="copiarTexto('938657487')">Copiar número</button>
+</div>
+
+<div class="card">
+<img src="LOGO BBVA.svg" class="logo">
+
+<h3>QR BBVA</h3>
+
+<img src="QR BBVA.jpeg" class="qr">
+
+<button>Ver QR</button>
+</div>
+
+</div>
+
+<div class="footer">
+<span>www.dinamicaperu.com.pe</span>
+</div>
+
+</div>
+
+</body>
+</html>

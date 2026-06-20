@@ -99,26 +99,27 @@ background:#a00000;
 
 .bottom{
     display:grid;
-    grid-template-columns:repeat(3, minmax(320px, 1fr));
+    grid-template-columns:repeat(3, 280px);
     gap:25px;
-}
-margin-top:25px;
-align-items:stretch;
+
+    justify-content:center;
+
+    margin-top:25px;
 }
 
-.bottom{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:25px;
-    margin-top:25px;
-    max-width:950px;
-    margin-left:auto;
-    margin-right:auto;
+.bottom .card{
+    min-height:420px;
+    box-sizing:border-box;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
 }
 .logo-yape{
-    height:80px !important;
+    height:70px !important;
     width:auto;
-}
+
 
 .logo-bbva-qr{
     height:55px !important;

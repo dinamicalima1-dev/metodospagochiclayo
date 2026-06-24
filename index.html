@@ -45,8 +45,11 @@ margin-bottom:40px;
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     gap:25px;
-}
 
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+}
 .card{
 background:white;
 border:1px solid #d80000;
@@ -98,15 +101,20 @@ background:#a00000;
 }
 
 .bottom{
-    display:flex;
-    justify-content:center;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
     gap:25px;
     margin-top:25px;
+
+    width:100%;
+    max-width:1400px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .bottom .card{
-    width:320px;
     min-height:420px;
+    width:100%;
     box-sizing:border-box;
 }
 
@@ -120,9 +128,8 @@ background:#a00000;
 }
 
 .logo-bbva-qr{
-    height:55px !important;
+    height:50px !important;
 }
-
 .qr{
     width:180px;
     height:180px;

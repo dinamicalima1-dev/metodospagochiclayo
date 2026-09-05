@@ -51,6 +51,7 @@ margin-bottom:40px;
     max-width:1400px;
     margin:0 auto;
 }
+
 .card{
 background:white;
 border:1px solid #d80000;
@@ -85,6 +86,34 @@ font-size:24px;
 margin:8px 0 20px;
 word-break:break-word;
 }
+
+/* BLOQUES PARA SOLES Y DÓLARES */
+
+.bloque-moneda{
+    padding:20px 10px;
+    margin-top:15px;
+    border-radius:10px;
+}
+
+.bloque-moneda.soles{
+    background:#fff5f5;
+}
+
+.bloque-moneda.dolares{
+    background:#f5f8fc;
+}
+
+.bloque-moneda h4{
+    font-size:26px;
+    margin-bottom:18px;
+}
+
+.separador-moneda{
+    height:1px;
+    background:#ddd;
+    margin:20px 15px 5px;
+}
+
 .ruta-pago{
     background:#f8f8f8;
     border-left:4px solid #c40000;
@@ -95,6 +124,7 @@ word-break:break-word;
     text-align:left;
     border-radius:6px;
 }
+
 button{
 background:#c40000;
 border:none;
@@ -128,6 +158,7 @@ background:#a00000;
 
     width:100%;
 }
+
 .logo-yape{
     height:45px !important;
 }
@@ -135,6 +166,7 @@ background:#a00000;
 .logo-bbva-qr{
     height:50px !important;
 }
+
 .qr{
     width:180px;
     height:180px;
@@ -176,6 +208,10 @@ grid-template-columns:1fr;
 .dato{
 font-size:18px;
 }
+
+.bloque-moneda h4{
+    font-size:22px;
+}
 }
 </style>
 
@@ -187,6 +223,7 @@ alert("Número copiado");
 </script>
 
 </head>
+
 <body>
 
 <div class="container">
@@ -201,6 +238,8 @@ Métodos de pago - SEDE CHICLAYO
 
 <div class="grid">
 
+<!-- BCP -->
+
 <div class="card">
 
     <img src="LOGO BCP - copia.png" class="logo">
@@ -212,7 +251,9 @@ Métodos de pago - SEDE CHICLAYO
 
     <p><strong>CCI SOLES</strong></p>
     <div class="dato">002-305-001808375021-18</div>
-    <button onclick="copiarTexto('00230500180837502118')">Copiar número</button>
+    <button onclick="copiarTexto('00230500180837502118')">
+        Copiar número
+    </button>
 
     <br><br>
 
@@ -223,9 +264,15 @@ Métodos de pago - SEDE CHICLAYO
 
     <p><strong>CCI DÓLARES</strong></p>
     <div class="dato">002-305-001779185182-11</div>
-    <button onclick="copiarTexto('00230500177918518211')">Copiar número</button>
+    <button onclick="copiarTexto('00230500177918518211')">
+        Copiar número
+    </button>
 
 </div>
+
+
+<!-- BBVA -->
+
 <div class="card">
 
     <img src="LOGO BBVA.svg" class="logo">
@@ -237,7 +284,9 @@ Métodos de pago - SEDE CHICLAYO
 
     <p><strong>CCI SOLES</strong></p>
     <div class="dato">011-285-000100114276-47</div>
-    <button onclick="copiarTexto('01128500010011427647')">Copiar número</button>
+    <button onclick="copiarTexto('01128500010011427647')">
+        Copiar número
+    </button>
 
     <br><br>
 
@@ -248,55 +297,133 @@ Métodos de pago - SEDE CHICLAYO
 
     <p><strong>CCI DÓLARES</strong></p>
     <div class="dato">011-285-000202121706-48</div>
-    <button onclick="copiarTexto('01128500020212170648')">Copiar número</button>
+    <button onclick="copiarTexto('01128500020212170648')">
+        Copiar número
+    </button>
 
 </div>
 
+
+<!-- SCOTIABANK -->
+
 <div class="card">
+
 <img src="scotiabanklogo.png" class="logo">
-  
-<p><strong>Cuenta Soles</strong></p>
+
+<!-- SOLES -->
+
+<div class="bloque-moneda soles">
+
+<h4>Cuenta Soles</h4>
+
+<p><strong>Número de cuenta</strong></p>
 <div class="dato">000-5058189</div>
-<button onclick="copiarTexto('0005058189')">Copiar número</button>
-  
+
+<button onclick="copiarTexto('0005058189')">
+    Copiar número
+</button>
+
 <p><strong>CCI Soles</strong></p>
 <div class="dato">00940900000505818941</div>
-<button onclick="copiarTexto('00940900000505818941')">Copiar número</button>
 
-    
-<p><strong>Cuenta Dólares</strong></p>
-<div class="dato">000-5346125</div>
-<button onclick="copiarTexto('0005346125')">Copiar número</button>
-  
-<p><strong>CCI Dólares</strong></p>
-<div class="dato">00940900000534612547</div>
-<button onclick="copiarTexto('00940900000534612547')">Copiar número</button>
+<button onclick="copiarTexto('00940900000505818941')">
+    Copiar número
+</button>
 
 </div>
 
+<div class="separador-moneda"></div>
+
+<!-- DÓLARES -->
+
+<div class="bloque-moneda dolares">
+
+<h4>Cuenta Dólares</h4>
+
+<p><strong>Número de cuenta</strong></p>
+<div class="dato">000-5346125</div>
+
+<button onclick="copiarTexto('0005346125')">
+    Copiar número
+</button>
+
+<p><strong>CCI Dólares</strong></p>
+<div class="dato">00940900000534612547</div>
+
+<button onclick="copiarTexto('00940900000534612547')">
+    Copiar número
+</button>
+
+</div>
+
+</div>
+
+
+<!-- INTERBANK -->
+
 <div class="card">
+
 <img src="Interbank logo.png" class="logo">
 
-<p><strong>Cuenta Soles</strong></p>
+<!-- SOLES -->
+
+<div class="bloque-moneda soles">
+
+<h4>Cuenta Soles</h4>
+
+<p><strong>Número de cuenta</strong></p>
 <div class="dato">700-3008374931</div>
-<button onclick="copiarTexto('7003008374931')">Copiar número</button>
+
+<button onclick="copiarTexto('7003008374931')">
+    Copiar número
+</button>
 
 <p><strong>CCI Soles</strong></p>
 <div class="dato">003-700-003008374931-24</div>
-<button onclick="copiarTexto('00370000300837493124')">Copiar número</button>
 
-    
-<p><strong>Cuenta Dólares</strong></p>
+<button onclick="copiarTexto('00370000300837493124')">
+    Copiar número
+</button>
+
+</div>
+
+<div class="separador-moneda"></div>
+
+<!-- DÓLARES -->
+
+<div class="bloque-moneda dolares">
+
+<h4>Cuenta Dólares</h4>
+
+<p><strong>Número de cuenta</strong></p>
 <div class="dato">700-3008374949</div>
-<button onclick="copiarTexto('7003008374949')">Copiar número</button>
+
+<button onclick="copiarTexto('7003008374949')">
+    Copiar número
+</button>
 
 <p><strong>CCI Dólares</strong></p>
 <div class="dato">003-700-003008374949-26</div>
-<button onclick="copiarTexto('00370000300837494926')">Copiar número</button>
+
+<button onclick="copiarTexto('00370000300837494926')">
+    Copiar número
+</button>
+
 </div>
-</div>    
+
+</div>
+
+</div>
+
+
+<!-- PARTE INFERIOR -->
+
 <div class="bottom">
+
+<!-- CAJA PIURA -->
+
 <div class="card">
+
 <img src="CAJA PIURA LOGO.svg" class="logo">
 
 <h3>Cuenta Recaudadora</h3>
@@ -307,14 +434,20 @@ Métodos de pago - SEDE CHICLAYO
 <br>
 
 <p><strong>Código</strong></p>
+
 <div class="numero">14394</div>
 
-<button onclick="copiarTexto('14394')">Copiar número</button>
+<button onclick="copiarTexto('14394')">
+    Copiar número
+</button>
 
-</div> 
+</div>
 
+
+<!-- YAPE -->
 
 <div class="card">
+
 <img src="LOGO YAPE.png" class="logo logo-yape">
 
 <h3>Pago con Yape</h3>
@@ -326,16 +459,29 @@ Métodos de pago - SEDE CHICLAYO
 
 <div class="numero">938 657 487</div>
 
-<button onclick="copiarTexto('938657487')">Copiar número</button>
+<button onclick="copiarTexto('938657487')">
+    Copiar número
+</button>
+
 </div>
 
+
+<!-- QR BBVA -->
+
 <div class="card">
+
 <img src="LOGO BBVA.svg" class="logo logo-bbva-qr">
 
 <img src="QR BBVA.jpeg" class="qr">
 
-<button>Ver QR</button>
+<button>
+    Ver QR
+</button>
+
 </div>
+
+</div>
+
 </div>
 
 </body>
